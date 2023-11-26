@@ -230,20 +230,34 @@
     {
       "email": "admin@systers.xyz",
       "password": "$2a$10$JABwR1UAtJqr2DCJ41ypMOgOqlh8eRXmTBO6DXfKG3ybxhABY4rey",
+      "name": "AdminKaro",
       "role": "admin",
+      "isactive": true,
       "id": 1
     },
     {
       "email": "waiter@systers.xyz",
       "password": "$2a$10$JABwR1UAtJqr2DCJ41ypMOgOqlh8eRXmTBO6DXfKG3ybxhABY4rey",
+      "name": "WaitressKaro",
       "role": "waiter",
+      "isactive": true,
       "id": 2
     },
     {
       "email": "chef@systers.xyz",
       "password": "$2a$10$JABwR1UAtJqr2DCJ41ypMOgOqlh8eRXmTBO6DXfKG3ybxhABY4rey",
+      "name": "ChefKaro",
       "role": "chef",
+      "isactive": true,
       "id": 3
+    },
+    {
+      "email": "wKaro@gmail.com",
+      "password": "$2a$10$irRN8Weyr3DxmRrjCGCFo.Llbm/b9ET2q/AjJ2nyWDIElm7vUjW6m",
+      "name": "WaitressKaro",
+      "role": "",
+      "isactive": false,
+      "id": 4
     }
   ]
 }

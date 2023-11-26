@@ -1,3 +1,16 @@
+// Create an User
+POST http://localhost:8080/users HTTP/1.1
+content-type: application/json
+
+{ 
+    "name": "", 
+    "password": "123456", 
+    "email": "caror@gmail", 
+    "role": "", 
+    "isactive": false 
+}
+
+// Login
 POST http://localhost:8080/login HTTP/1.1
 content-type: application/json
 
@@ -6,9 +19,26 @@ content-type: application/json
     "password": "123456"
 }
 
+POST http://localhost:8080/login HTTP/1.1
+content-type: application/json
+
+{
+    "email": "waiter@systers.xyz",
+    "password": "123456"
+}
+
+POST http://localhost:8080/login HTTP/1.1
+content-type: application/json
+
+{
+    "email": "chef@systers.xyz",
+    "password": "123456"
+}
+
+//Get all users/products/orders
 GET http://localhost:8080/users HTTP/1.1
 content-type: application/json
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY1MDIzMzkwOSwiZXhwIjoxNjUwMjM3NTA5LCJzdWIiOiIyIn0.nS99u-MBatZHbexMUenwsGdS8oV55BIaGwI6PSP7BC8
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNyQGdtYWlsIiwiaWF0IjoxNzAwOTIxODEzLCJleHAiOjE3MDA5MjU0MTMsInN1YiI6IjQifQ.5TpF9d16KvfQYVWHwvBGml9nWhDF80YViv_vnzHFKR4
 
 GET http://localhost:8080/products HTTP/1.1
 content-type: application/json
@@ -18,6 +48,7 @@ GET http://localhost:8080/orders HTTP/1.1
 content-type: application/json
 authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY1MDIzMzkwOSwiZXhwIjoxNjUwMjM3NTA5LCJzdWIiOiIyIn0.nS99u-MBatZHbexMUenwsGdS8oV55BIaGwI6PSP7BC8
 
+//Update an order by Id
 PATCH http://localhost:8080/orders/2 HTTP/1.1
 content-type: application/json
 authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY1MDIzNDAzNSwiZXhwIjoxNjUwMjM3NjM1LCJzdWIiOiIyIn0.q6lDwW_wyK6-8-lUyiLUwnoowRLsvuFblu1yufkaa_Q
@@ -27,6 +58,7 @@ authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlL
     "dateProcessed": "2022-03-05 16:00"
 }
 
+//Create an Order
 POST http://localhost:8080/orders HTTP/1.1
 content-type: application/json
 authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY2NjEyNTQ5NSwiZXhwIjoxNjY2MTI5MDk1LCJzdWIiOiIyIn0.laNI7HKXIcDzCp1AYl4aMWh5jSlcMFKFQLHrCC2XTPw
@@ -60,3 +92,8 @@ authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlL
     "status": "pending",
     "dataEntry": "2022-03-05 15:00"
 }
+
+// Get user by Id
+GET http://localhost:8080/users/3 HTTP/1.1
+content-type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQHN5c3RlcnMueHl6IiwiaWF0IjoxNzAwOTY1MjExLCJleHAiOjE3MDA5Njg4MTEsInN1YiI6IjEifQ.bMq3W4IejlHutdZ2uT3CscgG32VJ7FgT3Yd7j9YjHZk
