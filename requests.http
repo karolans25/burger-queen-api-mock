@@ -53,7 +53,7 @@ content-type: application/json
     "password": "1234567"
 }
 
-//Get all users/products/orders
+//Get all users/products/orders/roles
 GET http://localhost:8080/users HTTP/1.1
 content-type: application/json
 authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IndhaXRlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTcwMTIzMTc1NiwiZXhwIjoxNzAxMjM1MzU2LCJzdWIiOiIyIn0.EUyBo-VWYRhyqplM5KDYVEEBK1V-f6_TvhWXklpatvY
@@ -65,6 +65,10 @@ authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IndhaXRlc
 GET http://localhost:8080/orders HTTP/1.1
 content-type: application/json
 authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IndhaXRlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTcwMTIzMTc1NiwiZXhwIjoxNzAxMjM1MzU2LCJzdWIiOiIyIn0.EUyBo-VWYRhyqplM5KDYVEEBK1V-f6_TvhWXklpatvY
+
+GET http://localhost:8080/roles HTTP/1.1
+content-type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQHN5c3RlcnMueHl6IiwiaWF0IjoxNzAxMjQ1NzQ2LCJleHAiOjE3MDEyNDkzNDYsInN1YiI6IjEifQ.7mYQ36J5jqGviJjWapcXEvvm_I7VYQKityLMOie2eYc
 
 //Update an order by Id
 PATCH http://localhost:8080/orders/2 HTTP/1.1
