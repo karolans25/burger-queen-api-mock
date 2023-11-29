@@ -3,12 +3,28 @@
     {
       "id": 1,
       "name": "admin"
-    }, {
+    },
+    {
       "id": 2,
       "name": "waiter"
-    }, {
+    },
+    {
       "id": 3,
       "name": "chef"
+    }
+  ],
+  "statusOrder": [
+    {
+      "id": 1,
+      "name": "pending"
+    },
+    {
+      "id": 2,
+      "name": "ready"
+    },
+    {
+      "id": 3,
+      "name": "delivered"
     }
   ],
   "orders": [
@@ -262,14 +278,6 @@
       "role": "chef",
       "isactive": true,
       "id": 3
-    },
-    {
-      "email": "wKaro@gmail.com",
-      "password": "$2a$10$irRN8Weyr3DxmRrjCGCFo.Llbm/b9ET2q/AjJ2nyWDIElm7vUjW6m",
-      "name": "WaitressKaro",
-      "role": "",
-      "isactive": false,
-      "id": 4
     }
   ]
 }

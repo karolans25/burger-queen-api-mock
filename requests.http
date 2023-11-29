@@ -64,11 +64,20 @@ authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IndhaXRlc
 
 GET http://localhost:8080/orders HTTP/1.1
 content-type: application/json
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IndhaXRlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTcwMTIzMTc1NiwiZXhwIjoxNzAxMjM1MzU2LCJzdWIiOiIyIn0.EUyBo-VWYRhyqplM5KDYVEEBK1V-f6_TvhWXklpatvY
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IndhaXRlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTcwMTI1NDUyNSwiZXhwIjoxNzAxMjU4MTI1LCJzdWIiOiIyIn0.4lRfdMCU0hjO3-N86NsMK6UEM6u76Ub5ASjTXs68Bng
 
 GET http://localhost:8080/roles HTTP/1.1
 content-type: application/json
 authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQHN5c3RlcnMueHl6IiwiaWF0IjoxNzAxMjQ1NzQ2LCJleHAiOjE3MDEyNDkzNDYsInN1YiI6IjEifQ.7mYQ36J5jqGviJjWapcXEvvm_I7VYQKityLMOie2eYc
+
+GET http://localhost:8080/statusOrder HTTP/1.1
+content-type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IndhaXRlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTcwMTI1NTAwOSwiZXhwIjoxNzAxMjU4NjA5LCJzdWIiOiIyIn0.qmxCkQ0mcm91o1knloogP8Ex9YjKkj9DcGbOuWxTV9Y
+
+GET http://localhost:8080/statusOrder/1 HTTP/1.1
+content-type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IndhaXRlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTcwMTI1NTAwOSwiZXhwIjoxNzAxMjU4NjA5LCJzdWIiOiIyIn0.qmxCkQ0mcm91o1knloogP8Ex9YjKkj9DcGbOuWxTV9Y
+
 
 //Update an order by Id
 PATCH http://localhost:8080/orders/2 HTTP/1.1

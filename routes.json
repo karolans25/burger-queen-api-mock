@@ -2,5 +2,6 @@
   "orders": 660,
   "products": 660,
   "users": 660,
-  "roles": 660
+  "roles": 660,
+  "statusOrder": 660
 }
