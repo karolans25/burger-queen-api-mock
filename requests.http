@@ -5,7 +5,7 @@ content-type: application/json
 { 
     "name": "", 
     "password": "123456", 
-    "email": "waiter@systers.xyz", 
+    "email": "waiterKaro@systers.xyz", 
     "role": "", 
     "isactive": false 
 }
@@ -56,15 +56,15 @@ content-type: application/json
 //Get all users/products/orders
 GET http://localhost:8080/users HTTP/1.1
 content-type: application/json
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNyQGdtYWlsIiwiaWF0IjoxNzAwOTIxODEzLCJleHAiOjE3MDA5MjU0MTMsInN1YiI6IjQifQ.5TpF9d16KvfQYVWHwvBGml9nWhDF80YViv_vnzHFKR4
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IndhaXRlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTcwMTIzMTc1NiwiZXhwIjoxNzAxMjM1MzU2LCJzdWIiOiIyIn0.EUyBo-VWYRhyqplM5KDYVEEBK1V-f6_TvhWXklpatvY
 
 GET http://localhost:8080/products HTTP/1.1
 content-type: application/json
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY1MDIzMzkwOSwiZXhwIjoxNjUwMjM3NTA5LCJzdWIiOiIyIn0.nS99u-MBatZHbexMUenwsGdS8oV55BIaGwI6PSP7BC8
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IndhaXRlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTcwMTIzMTc1NiwiZXhwIjoxNzAxMjM1MzU2LCJzdWIiOiIyIn0.EUyBo-VWYRhyqplM5KDYVEEBK1V-f6_TvhWXklpatvY
 
 GET http://localhost:8080/orders HTTP/1.1
 content-type: application/json
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY1MDIzMzkwOSwiZXhwIjoxNjUwMjM3NTA5LCJzdWIiOiIyIn0.nS99u-MBatZHbexMUenwsGdS8oV55BIaGwI6PSP7BC8
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IndhaXRlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTcwMTIzMTc1NiwiZXhwIjoxNzAxMjM1MzU2LCJzdWIiOiIyIn0.EUyBo-VWYRhyqplM5KDYVEEBK1V-f6_TvhWXklpatvY
 
 //Update an order by Id
 PATCH http://localhost:8080/orders/2 HTTP/1.1
