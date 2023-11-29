@@ -5,7 +5,7 @@ content-type: application/json
 { 
     "name": "", 
     "password": "123456", 
-    "email": "caror@gmail", 
+    "email": "waiter@systers.xyz", 
     "role": "", 
     "isactive": false 
 }
@@ -33,6 +33,24 @@ content-type: application/json
 {
     "email": "chef@systers.xyz",
     "password": "123456"
+}
+
+// Invalid Login -> Cannot find user
+POST http://localhost:8080/login HTTP/1.1
+content-type: application/json
+
+{
+    "email": "a@systers",
+    "password": "123456"
+}
+
+// Invalid Login -> Incorrect password
+POST http://localhost:8080/login HTTP/1.1
+content-type: application/json
+
+{
+    "email": "admin@systers.xyz",
+    "password": "1234567"
 }
 
 //Get all users/products/orders
@@ -97,3 +115,7 @@ authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlL
 GET http://localhost:8080/users/3 HTTP/1.1
 content-type: application/json
 authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQHN5c3RlcnMueHl6IiwiaWF0IjoxNzAwOTY1MjExLCJleHAiOjE3MDA5Njg4MTEsInN1YiI6IjEifQ.bMq3W4IejlHutdZ2uT3CscgG32VJ7FgT3Yd7j9YjHZk
+
+GET http://localhost:8080/users?email=waiter@systers.xyz HTTP/1.1
+content-type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQHN5c3RlcnMueHl6IiwiaWF0IjoxNzAxMjEzNzY4LCJleHAiOjE3MDEyMTczNjgsInN1YiI6IjEifQ.5-A34SyIxX2LA_v1L5dXDviRl9jopl0S4UcQwqM2Jj0
