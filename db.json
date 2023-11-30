@@ -76,7 +76,7 @@
           }
         },
         {
-          "qty": 1,
+          "qty": 2,
           "product": {
             "id": 2,
             "name": "Water 500ml",
@@ -90,6 +90,37 @@
       "status": "delivered",
       "dataEntry": "2022-03-05 15:00",
       "dateProcessed": "2022-03-05 16:00"
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "client": "Kartik Arora",
+      "products": [
+        {
+          "qty": 3,
+          "product": {
+            "id": 1,
+            "name": "American coffee",
+            "price": 500,
+            "image": "https://raw.githubusercontent.com/ssinuco/burger-queen-api-mock/main/resources/images/coffee.png",
+            "type": "Beverages",
+            "dateEntry": "2022-03-05 15:14:10"
+          }
+        },
+        {
+          "qty": 3,
+          "product": {
+            "id": 2,
+            "name": "Water 500ml",
+            "price": 500,
+            "image": "https://raw.githubusercontent.com/ssinuco/burger-queen-api-mock/main/resources/images/water.png",
+            "type": "Beverages",
+            "dateEntry": "2022-03-05 15:14:10"
+          }
+        }
+      ],
+      "status": "ready",
+      "dataEntry": "2022-03-05 15:00"
     }
   ],
   "products": [
@@ -278,6 +309,14 @@
       "role": "chef",
       "isactive": true,
       "id": 3
+    },
+    {
+      "email": "cr@gmail.com",
+      "password": "$2a$10$8z1TJPcD.G9basfsxmjnMuwO.CyByYIY0uAYrAb445y6B6YpjSEnK",
+      "name": "John",
+      "isactive": true,
+      "role": "waiter",
+      "id": 4
     }
   ]
 }

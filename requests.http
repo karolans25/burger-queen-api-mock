@@ -60,7 +60,7 @@ authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IndhaXRlc
 
 GET http://localhost:8080/products HTTP/1.1
 content-type: application/json
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IndhaXRlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTcwMTIzMTc1NiwiZXhwIjoxNzAxMjM1MzU2LCJzdWIiOiIyIn0.EUyBo-VWYRhyqplM5KDYVEEBK1V-f6_TvhWXklpatvY
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IndhaXRlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTcwMTMwMjQyMiwiZXhwIjoxNzAxMzA2MDIyLCJzdWIiOiIyIn0.jzSnEVY7gxnp21DOoUxSg2_0WXqCdBFUOgxygXjWIZI
 
 GET http://localhost:8080/orders HTTP/1.1
 content-type: application/json
